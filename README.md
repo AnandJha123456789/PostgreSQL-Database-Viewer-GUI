@@ -28,8 +28,8 @@ A robust, lightweight, and user-friendly desktop application for viewing, queryi
 
 1.  **Clone the repository** (or download the source code):
     ```bash
-    git clone https://github.com/AnandJha123456789/PostgreSQL-Database-Viewer-GUI.git
-    cd <your-repo-folder>
+    git clone https://github.com/AnandJha123456789/PostgreSQL-Database-Viewer-GUI.git db_viewer
+    cd db_viewer
     ```
 
 2.  **Create a Virtual Environment** (Recommended):
