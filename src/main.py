@@ -11,7 +11,7 @@ def main():
 
     # Use demo config or load from .env / environment variables
     # db_config = DatabaseConfig.from_env_file()
-    db_config = DatabaseConfig.from_env_file()
+    db_config = DatabaseConfig.get_demo_config()
 
     db = DatabaseConnection(db_config)
 
