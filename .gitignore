@@ -3,4 +3,6 @@ __pycache__/
 .env
 .vscode/
 .idea/
+.venv/
+venv/
 saved_queries/
