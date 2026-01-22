@@ -6,7 +6,7 @@ A robust, lightweight, and user-friendly desktop application for viewing, queryi
 
 ![Application Screenshot](assets/screenshot.png)
 
-## 🚀 Features
+## Features
 
 *   **Schema & Table Browser:** Automatically introspects schemas and tables.
 *   **Fuzzy Table Search:** Quickly find tables across schemas using a fuzzy search combo box.
@@ -19,12 +19,12 @@ A robust, lightweight, and user-friendly desktop application for viewing, queryi
 *   **Data Export:** Export current results to CSV.
 *   **Demo Mode:** Includes built-in credentials for the EBI public bioinformatics database for testing.
 
-## 📋 Prerequisites
+## Prerequisites
 
 *   **Python 3.10+**
 *   **PostgreSQL** database access.
 
-## 🛠️ Installation
+## Installation
 
 1.  **Clone the repository** (or download the source code):
     ```bash
@@ -51,7 +51,7 @@ A robust, lightweight, and user-friendly desktop application for viewing, queryi
     sudo apt-get install python3-tk
     ```
 
-## ⚙️ Configuration
+## Configuration
 
 The application uses a `.env` file to manage database credentials.
 
@@ -68,7 +68,7 @@ DB_PASS=your_password
 
 *Note: If no environment variables are found, the application may default to the Demo Config (EBI Public Database) defined in `src/config.py`.*
 
-## ▶️ Usage
+## Usage
 
 Run the application from the root directory using the module flag to ensure imports resolve correctly:
 
@@ -89,7 +89,7 @@ python3 -m src.main
 5.  **Custom Queries:** Click "Show Query & JSON Tools" to see the generated SQL. You can edit this manually and click "Run Custom Query".
 6.  **History:** Use the `<` and `>` buttons in the top left to move backward and forward through your exploration history.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 db_viewer/
@@ -110,7 +110,7 @@ db_viewer/
 └── README.md               # Documentation
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 *   **"CRITICAL ERROR: The required library 'pg8000' is not installed"**:
     Ensure you activated your virtual environment and ran `pip install -r requirements.txt`.
@@ -119,6 +119,6 @@ db_viewer/
 *   **UI Freezing**:
     The app uses threading for data fetching. If the UI hangs specifically during "Get Total Count" on a massive table, the database might be taking a long time to return the count.
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
